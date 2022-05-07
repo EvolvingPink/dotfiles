@@ -1,0 +1,51 @@
+# The font configuration
+font:
+  # Normal (roman) font face
+  normal:
+    # Font Family
+    #
+    # Default -> monospace
+    family: monospace
+
+    # The style can be specified to pick a specific face.
+    style: regular
+
+  # Bold font face
+  bold:
+    # Font Family
+    #
+    # If the bold family is not specified, it will fall back to the value specified for the normal font
+    #family: monospace
+
+    # The style can be specified to pick a specific face.
+    style: bold
+
+  # Italic font face
+  italic:
+    # Font Family
+    #
+    # If the italic family is not specified, it will fall back to the value specified for the normal font
+    #family: monospace
+
+    # The style can be specified to pick a specific face.
+    style: Italic
+
+  # Bold italic font face
+  bold_italic:
+    # Font Family
+    #
+    # If the bold italic family is not specified, it will fall back to the value specified for the normal font
+    #family: monospace
+
+    # The style can be specified to pick a specific face.
+    style: Bold Italic
+
+  # Point size
+  size: 8.0
+
+
+  # Use built-in font for box drawing characters.
+  #
+  # If 'true', Alacritty will use a custom built-in font for box drawing characters (Unicode points 2500 - 259f).
+  #
+  builtin_box_drawing: true

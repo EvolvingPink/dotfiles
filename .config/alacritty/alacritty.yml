@@ -1,0 +1,7 @@
+import:
+  - /home/alice/.config/alacritty/colorschemes/colors.yml
+  - /home/alice/.config/alacritty/font.yml
+  - /home/alice/.config/alacritty/window.yml
+  #- /home/alice/.config/alacritty/cursor.yml
+  #- /home/alice/.config/alacritty/key_bindings.yml
+
