@@ -107,6 +107,7 @@ source $ZSH/oh-my-zsh.sh
 # Aliases #
 ###########
 
+# See https://news.ycombinator.com/item?id=11071754
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles.git/.git --work-tree=$HOME/'
 
 
