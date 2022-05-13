@@ -71,11 +71,22 @@ ZSH_THEME="alanpeabody"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  archlinux
+  #colorize
+  docker
+  docker-compose
+  gh
   git
+  poetry
   python
+  sudo
+  tmux
+  vundle
 )
 
 source $ZSH/oh-my-zsh.sh
+
+export PATH="/home/alice/bin:/home/alice/.local/bin:$PATH"
 
 # User configuration
 
@@ -100,12 +111,13 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 
 ###########
 # Aliases #
 ###########
+
+alias zshconfig="vim ~/.zshrc"
+alias ohmyzsh="vim ~/.oh-my-zsh"
 
 # See https://news.ycombinator.com/item?id=11071754
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles.git/.git --work-tree=$HOME/'
