@@ -228,13 +228,17 @@ globalkeys = gears.table.join(
         {description = "go back", group = "client"}),
 
     -- Standard program
-    awful.key({ modkey,           }, "Return", function () awful.spawn(terminal) end,
+    awful.key({ modkey,           }, "Return", function () awful.spawn(terminal)              end,
               {description = "open a terminal", group = "launcher"}),
     awful.key({ modkey, "Control" }, "r", awesome.restart,
               {description = "reload awesome", group = "awesome"}),
     awful.key({ modkey, "Control", "Shift"   }, "e", awesome.quit,
               {description = "quit awesome", group = "awesome"}),
-
+    awful.key({ modkey,           }, "d",     function () awful.spawn("rofi -show drun")      end,
+              {description = "Start rofi", group = "launcher"}),
+    awful.key({ modkey, "Control" }, "d",     function () awful.spawn("rofi -show ssh")      end,
+              {description = "Start rofi", group = "launcher"}),
+              
     awful.key({ modkey,           }, "l",     function () awful.tag.incmwfact( 0.05)          end,
               {description = "increase master width factor", group = "layout"}),
     awful.key({ modkey,           }, "h",     function () awful.tag.incmwfact(-0.05)          end,
