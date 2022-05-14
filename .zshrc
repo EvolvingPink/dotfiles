@@ -8,7 +8,11 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="alanpeabody"
+#ZSH_THEME="alanpeabody"
+
+# Adding powerline
+powerline-daemon -q
+. /usr/share/powerline/bindings/zsh/powerline.zsh
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -123,7 +127,7 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles.git/.git --work-tree=$HOME/'
 
 
-
+# Start display server at login
 if [[ -z $DISPLAY ]]; then
 startx
 fi

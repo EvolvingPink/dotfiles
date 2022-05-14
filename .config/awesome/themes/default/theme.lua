@@ -12,7 +12,9 @@ local wallpaper_path = "/home/alice/.config/wallpaper/"
 
 local theme = {}
 
-theme.font          = "sans 8"
+--theme.font          = "sans 8"
+theme.font          = "Droid Sans Mono for Powerline 9"
+--theme.font = "ttf dejavu 12"
 
 theme.bg_normal     = "#222222"
 theme.bg_focus      = "#535d6c"
