@@ -58,6 +58,9 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+set laststatus=2
+let g:powerline_pycmd="py3"
+
 " Tell syntastic to use the flake8 checker (alternatives: flake9, pyflake, pylint
 let g:syntastic_python_checkers = ['flake8']
 

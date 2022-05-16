@@ -12,7 +12,7 @@ export ZSH="$HOME/.oh-my-zsh"
 
 # Adding powerline
 powerline-daemon -q
-. /usr/share/powerline/bindings/zsh/powerline.zsh
+. $HOME/.config/powerline/zsh/powerline.zsh
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
