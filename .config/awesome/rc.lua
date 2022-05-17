@@ -22,6 +22,10 @@ local hotkeys_popup = require("awful.hotkeys_popup")
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
 
+-- Enable powerline features in awesomewm
+package.path = package.path .. ';/usr/share/powerline/bindings/awesome/?.lua'
+require('powerline')
+
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
 -- another config (This code will only ever execute for the fallback config)
@@ -163,13 +167,14 @@ awful.screen.connect_for_each_screen(function(s)
             s.mytaglist,
             s.mypromptbox,
         },
-	    {
-	        layout = wibox.layout.flex.horizontal
-	    },
-        s.mytasklist, -- Middle widget
+    	{ -- Middle widgets
+	    layout = wibox.layout.flex.horizontal,
+	    s.mytasklist,
+    	},
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
-            wibox.widget.systray(),
+            --wibox.widget.systray(),
+	    powerline_widget,
         },
     }
 end)

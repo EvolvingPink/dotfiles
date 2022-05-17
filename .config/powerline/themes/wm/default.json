@@ -2,11 +2,18 @@
 	"segments": {
 		"right": [
 			{
-				"function": "powerline.segments.common.wthr.weather",
+				"function": "powerline.segments.common.bat.battery"
+			},
+			{
+				"function": "powerline.segments.common.sys.system_load",
+				"args": {
+					"short": 1
+				},
 				"priority": 50
 			},
 			{
-				"function": "powerline.segments.common.time.date"
+				"function": "powerline.segments.common.sys.uptime",
+				"priority": 20
 			},
 			{
 				"function": "powerline.segments.common.time.date",
@@ -17,11 +24,11 @@
 				}
 			},
 			{
-				"function": "powerline.segments.common.mail.email_imap_alert",
+				"function": "powerline.segments.common.net.internal_ip",
 				"priority": 10,
 				"args": {
-					"username": "",
-					"password": ""
+					"interface": "wlan0",
+					"ipv": 4
 				}
 			}
 		]
