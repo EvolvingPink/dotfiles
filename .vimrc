@@ -41,6 +41,24 @@ au BufNewFile,BufRead *.py
     \ set autoindent        " automaticly indent new lines
     \ set fileformat=unix   " set the fileformat to unix files to prevent conversion issues
 
+" YAML specific configurations
+au BufNewFile,BufRead *.yml,*.yaml
+    \ set tabstop=2         " <tab> is 4 spaces
+    \ set softtabstop=2     " 
+    \ set shiftwidth=2      " shift is 4 spaces
+    \ set expandtab         " expand <tab> into spaces 
+    \ set autoindent        " automaticly indent new lines
+    \ set fileformat=unix   " set the fileformat to unix files to prevent conversion issues
+
+" JSON specific configurations
+au BufNewFile,BufRead *.json
+    \ set tabstop=2         " <tab> is 4 spaces
+    \ set softtabstop=2     " 
+    \ set shiftwidth=2      " shift is 4 spaces
+    \ set expandtab         " expand <tab> into spaces 
+    \ set autoindent        " automaticly indent new lines
+    \ set fileformat=unix   " set the fileformat to unix files to prevent conversion issues
+
 " Ignore *.pyc and *~ Dateien in NERDTree
 let NERDTreeIgnore=['\.pyc$', '\~$']
 
